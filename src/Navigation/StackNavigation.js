@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../screens/Home';
@@ -14,15 +13,21 @@ export default function StackNavigation() {
     <Stack.Navigator>
       <Stack.Screen
         name="home"
-        component={home}
+        component={Home}
         option={{title: 'the movie app'}}
-          />
-                <Stack.Screen
-        name="movie"
-        component={Movie}
-        option={{title: ''}}
-          />
-          
+      />
+      <Stack.Screen name="movie" component={Movie} option={{title: ''}} />
+      <Stack.Screen
+        name="news"
+        component={News}
+        option={{title: 'Nuevas Peliculas'}}
+      />
+      <Stack.Screen
+        name="polular"
+        component={Popular}
+        option={{title: 'Peliculas polulares'}}
+      />
+      <Stack.Screen name="Search" component={Search} option={{title: ''}} />
     </Stack.Navigator>
   );
 }
