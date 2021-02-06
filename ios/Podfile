@@ -26,6 +26,7 @@ end
 target 'thrmovieapp-tvOS' do
   # Pods for thrmovieapp-tvOS
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'thrmovieapp-tvOSTests' do
     inherit! :search_paths
